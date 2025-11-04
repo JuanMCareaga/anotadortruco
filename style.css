@@ -14,7 +14,7 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 50px;
-  flex-wrap: wrap;
+ 
 }
 
 .equipo {
@@ -27,7 +27,8 @@ h1 {
 
 .fosforos {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
   gap: 10px;
   min-height: 200px;
@@ -87,4 +88,29 @@ button:hover {
 
 button:hover {
   background-color: #ffaa00;
+}
+
+@media (max-width: 600px) {
+  h1{
+    font-size: 20px;
+  }
+
+ h2{
+  font-size: 14px;
+ }
+
+ .marcador {
+  gap: 10px;
+ }
+
+ .fosforo {
+  width: 3px;
+  height: 40px;
+ }
+
+.f1 { top: 7px; left: 15px; --rotacion: 0deg; transform: rotate(0deg); }          /* lado izquierdo */
+.f2 { top: 7px; right: 12px; --rotacion: 0deg; transform: rotate(0deg); }         /* lado derecho */
+.f3 { top: -20px; left: 40px; --rotacion: 90deg; transform: rotate(90deg); }     /* lado superior */
+.f4 { bottom: 8px; left: 40px; --rotacion: 90deg; transform: rotate(90deg); }  /* lado inferior */
+.f5 { top: 5px; left: 40px; --rotacion: 45deg; transform: rotate(45deg); }  /* diagonal */
 }
