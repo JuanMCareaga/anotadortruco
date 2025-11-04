@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f7f2e9;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+.marcador {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.equipo {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 240px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.fosforos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  min-height: 200px;
+  margin-bottom: 10px;
+}
+
+.cuadro {
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+/* Animación suave de aparición */
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(0deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(var(--rotacion));
+  }
+}
+
+.fosforo {
+  position: absolute;
+  width: 5px;
+  height: 50px;
+  background-color: black;
+  transform-origin: center;
+  opacity: 0;
+  animation: aparecer 0.5s forwards;
+}
+
+/* Posiciones de los fósforos para formar el cuadro */
+.f1 { top: 7px; left: 7px; --rotacion: 0deg; transform: rotate(0deg); }          /* lado izquierdo */
+.f2 { top: 7px; right: 5px; --rotacion: 0deg; transform: rotate(0deg); }         /* lado derecho */
+.f3 { top: -20px; left: 40px; --rotacion: 90deg; transform: rotate(90deg); }     /* lado superior */
+.f4 { bottom: -5px; left: 40px; --rotacion: 90deg; transform: rotate(90deg); }  /* lado inferior */
+.f5 { top: 5px; left: 40px; --rotacion: 45deg; transform: rotate(45deg); }  /* diagonal */
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffcc00;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #ffaa00;
+}
+
+
+button:hover {
+  background-color: #ffaa00;
+}
