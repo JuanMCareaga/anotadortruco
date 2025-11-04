@@ -35,7 +35,7 @@ function crearCuadro(cantidad) {
   for (let i = 1; i <= cantidad; i++) {
     const fosforo = document.createElement("div");
     fosforo.classList.add("fosforo", `f${i}`);
-    fosforo.style.animationDelay = `${i * 0.1}s`; // escalonado
+    fosforo.style.animationDelay = `${i * 0.0}s`; // escalonado
     cuadro.appendChild(fosforo);
   }
 

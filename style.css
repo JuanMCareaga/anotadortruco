@@ -68,7 +68,7 @@ h1 {
   background-color: black;
   transform-origin: center;
   opacity: 0;
-  animation: aparecer 0.5s forwards;
+  animation: aparecer 0.0s forwards;
 }
 
 /* Posiciones de los fósforos para formar el cuadro */
