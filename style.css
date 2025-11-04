@@ -103,9 +103,19 @@ button:hover {
   gap: 10px;
  }
 
+ .fosforos {
+  margin-bottom: 0;
+  gap: 0;
+ }
+
+
  .fosforo {
   width: 3px;
   height: 40px;
+ }
+
+ .cuadro {
+  margin-bottom: -10px;
  }
 
 .f1 { top: 7px; left: 15px; --rotacion: 0deg; transform: rotate(0deg); }          /* lado izquierdo */
