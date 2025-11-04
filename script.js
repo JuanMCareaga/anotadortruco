@@ -51,8 +51,8 @@ function sumar(equipo) {
       const nombre = equipo === "equipo1" ? "Soles ⭐" : "Monitos 🐵";
       setTimeout(() => {
         document.getElementById("audioVictoria").play();
-        alert(`🎉 ¡${nombre} ganaron el Truco!`);
-      }, 500);
+        popup.style.display = 'flex';
+      }, 200);
     }
   }
 }
@@ -68,6 +68,10 @@ function reiniciarJuego() {
   puntos.equipo1 = 0;
   puntos.equipo2 = 0;
   actualizarFosforos();
+}
+
+function cerrarPopup() {
+  popup.style.display = 'none';
 }
 
 actualizarFosforos();
