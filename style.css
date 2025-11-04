@@ -125,6 +125,11 @@ button:hover {
   gap: 10px;
  }
 
+ .equipo {
+  width: 200px;
+  padding: 10px;
+ }
+
  .fosforos {
   margin-bottom: 0;
   gap: 0;

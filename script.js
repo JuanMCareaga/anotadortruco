@@ -48,7 +48,7 @@ function sumar(equipo) {
     actualizarFosforos();
 
     if (puntos[equipo] === 30) {
-      const nombre = equipo === "equipo1" ? "Nosotros" : "Ellos";
+      const nombre = equipo === "equipo1" ? "Soles ⭐" : "Monitos 🐵";
       setTimeout(() => {
         alert(`🎉 ¡${nombre} ganaron el Truco!`);
         document.getElementById("audioVictoria").play();
