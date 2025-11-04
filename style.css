@@ -25,6 +25,14 @@ h1 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+
+.puntaje {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #d35400;
+}
+
 .fosforos {
   display: flex;
   align-items: center;
@@ -90,6 +98,20 @@ button:hover {
   background-color: #ffaa00;
 }
 
+#reiniciar {
+  display: block;
+  margin: 40px auto 0;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+#reiniciar:hover {
+  background-color: #217dbb;
+}
+
 @media (max-width: 600px) {
   h1{
     font-size: 20px;
@@ -123,4 +145,14 @@ button:hover {
 .f3 { top: -20px; left: 40px; --rotacion: 90deg; transform: rotate(90deg); }     /* lado superior */
 .f4 { bottom: 8px; left: 40px; --rotacion: 90deg; transform: rotate(90deg); }  /* lado inferior */
 .f5 { top: 5px; left: 40px; --rotacion: 45deg; transform: rotate(45deg); }  /* diagonal */
+
+.botones{
+  display: flex;
+}
+
+.puntaje{
+  font-size: 2.5rem;
+  margin-bottom: 0;
+  margin-top: 15px;
+}
 }

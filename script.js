@@ -6,7 +6,9 @@ let puntos = {
 function actualizarFosforos() {
   for (let equipo in puntos) {
     const contenedor = document.getElementById("fosforos" + equipo.slice(-1));
+    const marcador = document.getElementById("puntaje" + equipo.slice(-1));
     contenedor.innerHTML = "";
+    marcador.textContent = puntos[equipo];
 
     const total = puntos[equipo];
     const cuadrosCompletos = Math.floor(total / 5);
@@ -18,7 +20,7 @@ function actualizarFosforos() {
       contenedor.appendChild(cuadro);
     }
 
-    // Cuadro parcial (resto)
+    // Cuadro parcial
     if (resto > 0) {
       const cuadro = crearCuadro(resto);
       contenedor.appendChild(cuadro);
@@ -60,6 +62,12 @@ function restar(equipo) {
     puntos[equipo]--;
     actualizarFosforos();
   }
+}
+
+function reiniciarJuego() {
+  puntos.equipo1 = 0;
+  puntos.equipo2 = 0;
+  actualizarFosforos();
 }
 
 actualizarFosforos();

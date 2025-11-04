@@ -7,23 +7,36 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Anotador de Truco 🔥</h1>
+    <h1>
+      Anotador de Truco <br />
+      Familia Reynoso 🔥
+    </h1>
 
     <div class="marcador">
       <div class="equipo" id="equipo1">
         <h2>Soles ⭐</h2>
         <div class="fosforos" id="fosforos1"></div>
-        <button onclick="sumar('equipo1')">Sumar</button>
-        <button onclick="restar('equipo1')">Restar</button>
+        <div class="botones">
+          <button onclick="sumar('equipo1')">Sumar</button>
+          <button onclick="restar('equipo1')">Restar</button>
+        </div>
+        <div class="puntaje" id="puntaje1">0</div>
       </div>
 
       <div class="equipo" id="equipo2">
-        <h2>Monitos 🐒</h2>
+        <h2>Monitos 🐵</h2>
         <div class="fosforos" id="fosforos2"></div>
-        <button onclick="sumar('equipo2')">Sumar</button>
-        <button onclick="restar('equipo2')">Restar</button>
+        <div class="botones">
+          <button onclick="sumar('equipo2')">Sumar</button>
+          <button onclick="restar('equipo2')">Restar</button>
+        </div>
+        <div class="puntaje" id="puntaje2">0</div>
       </div>
     </div>
+
+    <button id="reiniciar" onclick="reiniciarJuego()">
+      🔄 Reiniciar Juego
+    </button>
 
     <audio id="audioVictoria" src="victoria.mp3"></audio>
 
